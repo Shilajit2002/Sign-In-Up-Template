@@ -1,0 +1,52 @@
+.notfound {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:
+        linear-gradient(173deg, rgb(0, 68, 255), rgb(0, 0, 0), rgb(158, 3, 158));
+        letter-spacing: 2px;
+    text-align: center;
+}
+
+.notfound h1 {
+    font-size: 15vw;
+    color: aliceblue;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+}
+
+.notfound h4 {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+}
+
+.notfound p {
+    width: 50%;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.notfound .homepagebtn{
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgb(2, 62, 102);
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.notfound .homepagebtn:hover{
+    background-color:rgb(2, 62, 102) ;
+}

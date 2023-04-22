@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('./Assets//back.jpg') no-repeat;
+    background-size: 100% 100vh;
+}
+
+.dashboard .left {
+    width: 20%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(85deg, rgba(3, 32, 77, 0.541), rgba(0, 0, 0, 0.719));
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dashboard .left img {
+    width: 12rem;
+    height: 13rem;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border: 2px solid rgba(39, 1, 39, 0.411);
+}
+
+/* Input File */
+.dashboard .left #file {
+    display: none;
+}
+
+/* Camara Icon */
+.dashboard .left #picicon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+}
+
+.dashboard .left h4 {
+    color: red;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.dashboard .left h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dashboard .left button {
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgb(1, 83, 1);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.dashboard .right {
+    width: 50%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(85deg, rgba(3, 32, 77, 0.541), rgba(0, 0, 0, 0.719));
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard .right table {
+    width: 90%;
+}
+
+.dashboard .right table tbody tr td input {
+    border-style: none;
+    width: 90%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 1.5px;
+    border-bottom: 0.5px solid aliceblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.dashboard .right table tbody tr td input:focus {
+    outline: none;
+}
+
+.dashboard .right table tbody tr td {
+    margin: 5px;
+}
+
+.dashboard .right table tbody tr td:nth-child(1) {
+    padding: 10px 0;
+    padding-left: 15px;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(78, 1, 59, 0.479);
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 1.5px;
+    border-right: 2px solid rgba(0, 0, 0, 0.466);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.dashboard .right button {
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgb(0, 183, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.dashboard .right .co {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .right .co select {
+    border-style: none;
+    background: rgba(0, 0, 0, 0.623);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 15px;
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.dashboard .right .co select:focus {
+    outline: none;
+}
+
+@media only screen and (max-width:926px) {
+    .dashboard {
+        flex-direction: column;
+        padding-top: 100px;
+        background-size: cover;
+    }
+
+    .dashboard .left {
+        width: 80%;
+        min-height: fit-content;
+        margin-bottom: 20px
+    }
+
+    .dashboard .right {
+        width: 80%;
+        padding: auto 20px;
+        margin-bottom: 20px;
+    }
+
+    .dashboard .right table tbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dashboard .right table tbody tr td:nth-child(1) {
+        width: 100%;
+        border-radius: 20px;
+        padding-left: 0;
+    }
+
+    .dashboard .right .co {
+        flex-direction: column;
+    }
+
+    .dashboard .right .co input {
+        margin-top: 5px;
+    }
+}

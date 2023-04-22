@@ -1,0 +1,121 @@
+.signin {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #fd6f6f, #df0d8b, #9316b9, #5d04bd, #201647);
+    padding-top: 80px;
+}
+
+.signin .signInForm {
+    width: 30%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signin .signInForm h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.signin .signInForm img {
+    width: 10rem;
+    margin: 20px 0;
+    border-radius: 50%;
+    background-color: #ffffff8c;
+}
+
+.signin .signInForm p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    height: fit-content;
+    text-align: start;
+    width: 90%;
+}
+
+.signin .signInForm .outerDivForm {
+    border-style: none;
+    border-bottom: 0.1px solid transparent;
+    width: 90%;
+    display: flex;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.623);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.2s linear;
+    margin: 10px;
+}
+
+.signin .signInForm .outerDivForm input {
+    border-style: none;
+    width: 90%;
+    background: transparent;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0px 10px;
+}
+
+.signin .signInForm input:focus{
+    outline: none;
+}
+
+.signin .signInForm .outerDivForm:focus-within {
+    border-bottom: 0.1px solid aliceblue;
+}
+
+.signin .signInForm input::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.signin .signInForm .signupup,.signin .signInForm .signupin{
+    padding: 10px 40px;
+    border-style: none;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #201647;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.signin .signInForm .signupin:hover{
+    background-color: #1d153fa1;
+}
+
+.signin .signInForm .signupup{
+    background-color: rgb(33, 119, 194);
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:1080px){
+    .signin .signInForm{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:654px){
+    .signin .signInForm{
+        width: 90%;
+    }
+}
