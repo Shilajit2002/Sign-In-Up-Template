@@ -227,7 +227,30 @@ const Dashboard = (props) => {
                 }
             }).then((res) => {
                 // console.log(res.data);
-                window.location.reload();
+                // If the image is choosen and there have nor image error then upload the image
+                if (image !== null && imgerror === null) {
+                    const formData = new FormData();
+                    formData.append('profileImage', image);
+
+                    axios.post(`http://localhost:8000/api/profiles/upload/${id}`, formData, {
+                        headers: {
+                            'Authorization': `${Cookies.get('token')}`
+                        }
+                    }).then((res) => {
+                        // console.log(res.data);
+                        window.location.reload();
+                    }).catch((err) => {
+                        console.error(err);
+                    })
+                }
+                // Other Wise Error
+                else {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Please upload an image !!',
+                        confirmButtonText: 'Ok',
+                    })
+                }
             }).catch((err) => {
                 Swal.fire({
                     icon: 'warning',
